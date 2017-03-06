@@ -48,3 +48,7 @@ class Directory:
 		if int(id) >= self.max_users or int(id) < 0:
 			return "Error: id number not found"
 		return self.directory[id]
+
+	def getUserFullNameById(self, id):
+		user = self.getUserById(id)
+		return user[1] + ' ' + user[2]

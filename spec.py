@@ -38,3 +38,13 @@ print product_team.getUserById(0)
 # TEST throw error if invalid id is given for get user by id
 print "\nShould throw an error for invalid id"
 print product_team.getUserById(4)
+
+# TEST throw an error when trying to add another user beyonf the max user count
+# specified during instantiation
+third_member = product_team.promptNewUser()
+print "\nShould throw an error when trying to add a third user"
+product_team.addUser(third_member)
+
+# TEST returning the full name of the second user entered into the directory
+print "\nShould print the full name of the second user entered"
+print product_team.getUserFullNameById(1)
