@@ -23,7 +23,6 @@ class Directory:
 	def addUser(self, user):
 		if self.user_count == self.max_users:
 			print "Sorry directory is full..."
-
 		else:
 			print "Inserting user into index " + str(self.user_count)
 			self.directory[self.user_count] = user
