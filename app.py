@@ -29,6 +29,8 @@ class Directory:
 			self.directory[self.user_count] = user
 			self.user_count += 1
 
+	def getUserCount(self):
+		print self.user_count
 
 product_team = Directory(2)
 
@@ -37,3 +39,4 @@ for i in range(0, product_team.max_users):
 	product_team.addUser(new_member)
 
 print product_team.directory
+print product_team.user_count
