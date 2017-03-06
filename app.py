@@ -5,15 +5,17 @@ class Directory:
 		self.directory = list(None for x in range(0, self.max_users))
 
 	def promptNewUser(self):
-		single_user = list(None for x in range(0, 4))
+		single_user = list(None for x in range(0, 5))
 		first_name = raw_input("Enter first name > ")
 		last_name = raw_input("Enter last name > ")
 		phone = raw_input("Enter phone number > ")
 		email = raw_input("Enter email address > ")
+		city = raw_input("Enter city > ")
 		single_user[0] = first_name
 		single_user[1] = last_name
 		single_user[2] = phone
 		single_user[3] = email
+		single_user[4] = city
 		
 		return single_user
 
