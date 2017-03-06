@@ -31,6 +31,10 @@ class Directory:
 	def getUserCount(self):
 		print self.user_count
 
+	def deleteUser(self, id):
+		del self.directory[id]
+		return self.directory
+
 product_team = Directory(2)
 
 for i in range(0, product_team.max_users):
@@ -39,3 +43,6 @@ for i in range(0, product_team.max_users):
 
 print product_team.directory
 print product_team.user_count
+print "Deleting user at index 1..."
+product_team.deleteUser(1)
+print product_team.directory
