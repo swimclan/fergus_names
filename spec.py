@@ -37,6 +37,7 @@ print product_team.getUserById(0)
 
 # TEST throw error if invalid id is given for get user by id
 print "\nShould throw an error for invalid id"
+<<<<<<< HEAD
 print product_team.getUserById(4)
 
 # TEST throw an error when trying to add another user beyonf the max user count
@@ -48,3 +49,6 @@ product_team.addUser(third_member)
 # TEST returning the full name of the second user entered into the directory
 print "\nShould print the full name of the second user entered"
 print product_team.getUserFullNameById(1)
+=======
+print product_team.getUserById(4)
+>>>>>>> 8ccc94862289575c5ba00d70a5cfc28d690849ca
