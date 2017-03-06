@@ -39,16 +39,3 @@ class Directory:
 		if int(id) >= self.max_users or int(id) < 0:
 			return "Error: id number not found"
 		return self.directory[id]
-
-product_team = Directory(2)
-
-for i in range(0, product_team.max_users):
-	new_member = product_team.promptNewUser()
-	product_team.addUser(new_member)
-
-# =============================
-# TESTS
-# =============================
-print product_team.directory
-print product_team.user_count
-print product_team.getUserById(0)
